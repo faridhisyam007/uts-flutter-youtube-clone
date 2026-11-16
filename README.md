@@ -15,15 +15,44 @@ Pengembangan aplikasi ini dilakukan secara bertahap mulai dari perancangan keran
 
 ---
 
+## Dokumentasi Tampilan Aplikasi (Screenshots)
+
+### 1. Halaman Awal (Logged-Out Landing Page)
+Tampilan awal saat aplikasi pertama kali dibuka sebelum pengguna masuk ke akun.
+![Halaman Awal YouTube Clone](screenshots/1.HalamanAwalSebelumLogin.png)
+
+### 2. Modal Login & Halaman Registrasi
+Form autentikasi dengan validasi input dan fitur lihat/sembunyikan kata sandi.
+![Login dan Registrasi](screenshots/2.loginregister.png)
+
+### 3. Dashboard Utama (Dark Mode)
+Grid video responsif dengan filter kategori horizontal dan fitur pencarian judul/channel *real-time*.
+![Dashboard Utama](screenshots/3.dashboard.png)
+
+### 4. Halaman Pemutar Video (`WatchScreen`)
+Pemutar video rasio 16:9 dilengkapi kontrol Subscribe, kapsul Like/Dislike, dan daftar video rekomendasi di sisi kanan.
+![Halaman Pemutar Video](screenshots/4.Halaman%20pemutar%20video.png)
+
+### 5. Menu Opsi Lanjutan & Komentar Interaktif
+Menu popup opsi tambahan (*Download, Terima kasih, Simpan, Viralkan, Laporkan*) serta kolom komentar dinamis.
+![Menu Opsi dan Komentar](screenshots/5.menukomentar.png)
+
+---
+
 ## Struktur Folder Proyek
 
 ```text
-lib/
-├── main.dart                     # Entry point & konfigurasi routing halaman
-├── models/
-│   └── video_model.dart          # Struktur data video & daftar dummy videos
-└── screens/
-    ├── login_screen.dart         # Halaman awal YouTube & modal dialog Login
-    ├── register_screen.dart      # Halaman pendaftaran akun baru
-    ├── home_screen.dart          # Dashboard utama, filter kategori, & pencarian
-    └── watch_screen.dart         # Halaman pemutar video, menu opsi, & komentar
+youtube_clone_uts/
+├── lib/
+│   ├── main.dart                     # Entry point & konfigurasi routing halaman
+│   ├── models/
+│   │   └── video_model.dart          # Struktur data video & daftar dummy videos
+│   └── screens/
+│       ├── login_screen.dart         # Halaman awal YouTube & modal dialog Login
+│       ├── register_screen.dart      # Halaman pendaftaran akun baru
+│       ├── home_screen.dart          # Dashboard utama, filter kategori, & pencarian
+│       └── watch_screen.dart         # Halaman pemutar video, menu opsi, & komentar
+├── assets/
+│   └── images/                       # Aset gambar thumbnail video lokal
+├── screenshots/                      # Dokumentasi tangkapan layar aplikasi
+└── pubspec.yaml                      # Konfigurasi dependensi dan aset Flutter
